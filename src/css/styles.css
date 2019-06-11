@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: URL('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  src: URL('../fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: URL('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  src: URL('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+html{
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.carac{
+  font-size: 48px;
+  line-height: 51px;
+  letter-spacing: 0.02em;
+  font-family: Montserrat;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+#image{
+  height: 60vh;
+}
+
+.container{
+  display: flex;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+}
+
+.right{
+  padding-left: 4vw;
+}
+
+.item .icons{
+  height: 7vh;
+  margin-right: 1vw;
+}
+
+#system {
+  margin: 0;
+  padding: 0;
+}
+
+#system p{
+  margin: 0;
+  padding: 0;
+  font-size: 5vh;
+  font-weight: 800;
+}
+
+.item p{
+  font-weight: bold;
+  font-size: 3vh;
+}
+
+.item{
+  align-items: center;
+  display: flex;
+}
+
+#setPrice{
+  color: #FF1A00;
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+#image2 {
+  height: 100%;
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+form input{
+  height: 48px;
+}
+
+form input[type='number']{
+  height: 37px;
+}
+
+form input[type='submit']{
+  height: 42px;
+  background:  #FF1A00;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
