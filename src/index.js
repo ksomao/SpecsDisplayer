@@ -65,14 +65,14 @@ $(function () {
   }
   let getOS = () => {
     si.osInfo(function (data) {
-      console.log("getOs");
       let nom = data.distro
-      let nomLow = nom
+      let nomLow = nom.toLowerCase()
 
+      console.log('==>',nomLow.indexOf("windows"));
 
-      if (nomLow.indexOf("windows")) {
+      if (nomLow.indexOf("windows") !== -1) {
         $("#osImg").attr('src','image/icons8-c-drive-96.png')
-      } else if (nomLow.indexOf("mac")) {
+      } else if (nomLow.indexOf("mac") !== -1) {
         $("#osImg").attr('src','image/mac-os.png')
       } else {
         $("#osImg").attr('src','image/os-icon.png')
@@ -81,14 +81,6 @@ $(function () {
       $("#platf").html(nom + " " + data.arch)
     })
   }
-
-  // function imgChange () {
-  //
-  //   si.osInfo(function (data) {
-  //     let nom = data.distro
-  //
-  //   })
-  // }
 
 
 
