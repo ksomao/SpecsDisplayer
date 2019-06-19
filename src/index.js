@@ -65,9 +65,32 @@ $(function () {
   }
   let getOS = () => {
     si.osInfo(function (data) {
-      $("#platf").html(data.distro + " " + data.arch)
+      console.log("getOs");
+      let nom = data.distro
+      let nomLow = nom
+
+
+      if (nomLow.indexOf("windows")) {
+        $("#osImg").attr('src','image/icons8-c-drive-96.png')
+      } else if (nomLow.indexOf("mac")) {
+        $("#osImg").attr('src','image/mac-os.png')
+      } else {
+        $("#osImg").attr('src','image/os-icon.png')
+      }
+
+      $("#platf").html(nom + " " + data.arch)
     })
   }
+
+  // function imgChange () {
+  //
+  //   si.osInfo(function (data) {
+  //     let nom = data.distro
+  //
+  //   })
+  // }
+
+
 
 
   let getDisk = () => {
