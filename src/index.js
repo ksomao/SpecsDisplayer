@@ -128,7 +128,7 @@ $(function () {
 
 
 
-      if (caracLow.indexOf(nomLow) == 0)
+      if (caracLow.indexOf(nomLow) !== -1)
         $("#manuf").hide()
 
 
